@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypertenuse Calculator</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            background-color: #222831 !important;
+            color: white !important;
+            font-family: 'Montserrat' !important;
+        }
+
+        .container {
+            padding-left:200px !important;
+            padding-right:200px !important;
+           
+        }
+
+
+        .hide{
+            display: none;
+        }
+
+
+        .h3 {
+            font-weight: 700 !important;
+        
+        }
+
+        .sbutton {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+
+        .alert-warning {
+            background-color: #E8E8E8 !important;
+            color: rgb(36, 35, 35) !important;
+            border: 0px !important;
+        }
+
+        #my-svg{
+           padding-left: 25% !important;
+           padding-right: auto !important;
+        }
+
+    </style>
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+
+
+
+    <div class="container mt-5">
+        <object  id="my-svg" type="image/svg+xml" data="ss.svg"></object>
+        <h3 class="mb-4 h3">Hypertenuse Calculator</h3>
+
+        <form id="hopForm">
+            <div class="mb-3">
+                <label for="sayi1" class="form-label">Side 1 (a):</label>
+                <input type="number" class="form-control" id="sayi1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Side 2 (b):</label>
+                <input type="number" class="form-control" id="sayi2">
+            </div>
+            <button type="submit" class="btn btn-primary sbutton mt-3" style="width:100%;">Calculate</button>
+            <div class="alert alert-warning mt-4 hide" role="alert" id="alert">
+               
+             </div>
+        </form>
+
+        <p id="sonuc"></p>
+        
+           
+   
+
+       
+
+    </div>
+
+    
+
+  
+
+
+
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
